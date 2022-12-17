@@ -1,0 +1,136 @@
+# Welcome message
+print("Welcome to Alberta Hospital (AH) Management system")
+
+# Main menu options
+print("Select from the following options, or select 0 to stop:")
+print("1 - Doctors")
+print("2 - Facilities")
+print("3 - Laboratories")
+print("4 - Patients")
+
+# Ask the user to choose an option
+choice = int(input("Enter your choice: "))
+
+# Loop until the user chooses to stop (option 0)
+while choice != 0:
+  if choice == 1:
+    # Doctors menu
+    print("Doctors Menu:")
+    print("1 - Display Doctors list")
+    print("2 - Search for doctor by ID")
+    print("3 - Search for doctor by name")
+    print("4 - Add doctor")
+    print("5 - Edit doctor info")
+    print("6 - Back to the Main Menu")
+    
+    # Ask the user to choose an option
+    doctor_choice = int(input("Enter your choice: "))
+    
+    # Back to Main menu
+
+    
+
+    Info_choice = int(input("Enter your choice: "))
+    
+    # Handle each option in the doctors menu
+    if doctor_choice == 1:
+      # Display the doctors list
+      print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+      print("21   Dr.Gody                ENT             5am-11aM        MBBS,MD         17")
+      print("32   Dr.Vikram              Physician       10pm-3am        MBBS,MD         45")
+      print("17   Dr.Amy                 Surgeon         8pm-2am         BDM             8")
+      print("33   Dr.David               Artho           10am-4pm        MBBS,MS         40")
+      print("123  Dr. Ross               Headackes       8pm-10am        MST             102")
+      print("66   Dr. Mike               Heart           9am-5pm         MS              2") 
+      print("Back to the previous Menu")
+    elif doctor_choice == 2:
+      # Search for doctor by ID
+      doctor_id = int(input("Enter the doctor Id: "))
+      if doctor_id == 66:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("66   Dr. Mike               Heart           9am-5pm         MS              2")
+      if doctor_id == 123:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("123   Dr. Ross               Headackes           8pm-10m         MST              102")
+      if doctor_id == 33:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("33   Dr. David               Artho           10am-4pm         MBBS.MS             40")
+      if doctor_id == 17:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("17   Dr. Amy               Surgeon           8pm-2am         BDM             8")
+      if doctor_id == 32:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("32   Dr. Vikram               Physician           10pm-3am         MBBS,MD             45")
+      if doctor_id == 21:
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("21   Dr. Gody               ENT           5am-11am         MBBS,MD             17")
+    elif doctor_choice == 3:
+      # Search for doctor by name
+      doctor_name = input("Enter the doctor name: ")
+      if doctor_name == "Dr.David":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("33   Dr.David               Artho           10am-4pm        MBBS,MS         40")
+      if doctor_name == "Dr.Mike":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("66   Dr. Mike               Heart           9am-5pm         MS              2") 
+      if doctor_name == "Dr.Ross":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("123   Dr. Ross               Headackes           8pm-10m         MST              102")
+      if doctor_name == "Dr.Amy":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("17   Dr. Amy               Surgeon           8pm-2am         BDM             8")
+      if doctor_name == "Dr.Vikram":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("32   Dr. Vikram               Physician           10pm-3am         MBBS,MD             45")
+      if doctor_name == "Dr.Gody":
+        print("Id   Name                   Speciality      Timing          Qualification   Room Number")
+        print("21   Dr. Gody               ENT           5am-11am         MBBS,MD             17")
+
+      else:
+        print("Can't find the doctor with the same name on the system")
+      print("Back to the previous Menu")
+    elif doctor_choice == 4:
+      # Add doctor
+      doctor_id = int(input("Enter the doctor's ID: "))
+      doctor_name = input("Enter the doctor's name: ")
+      doctor_speciality = input("Enter the doctor's speciality: ")
+      doctor_timing = input("Enter the doctor's timing:")
+    elif Info_choice ==5:
+      # Please enter the ID of doctor you're looking for doctor_id = int(input("Enter the doctor's ID: "))
+      doctor_id = int(input("Enter the doctor's ID: "))
+      doctor_name = input("Enter the doctor's name: ")
+      doctor_speciality = input("Enter the doctor's speciality: ")
+      doctor_timing = input("Enter the doctor's timing:")
+      doctor_qualification = input("Enter the doctors qualification:")
+      doctor_rn = input("Enter doctor's room number:")
+  if choice == 2:
+     # Loop until the user chooses to stop (option 0) 
+
+    # Facilities menu
+    print("Facilities Menu:")
+    print("1 - Display Facilities list")
+    print("2 - Add Facility")
+    print("3 - Back to the Main Menu")
+    
+    # Ask the user to choose an option
+    facility_choice = int(input("Enter your choice: "))
+    
+    # Handle each option in the facilities menu
+    if facility_choice == 1:
+      # Display the facilities list
+      print("The Hospital Facilities are:")
+      print("1.Ambulance")
+      print("2.Admissions")
+      print("3.Canteen")
+      print("4.Emergency")
+      print("5.Covid Care")
+      
+      print("Back to the previous Menu")
+    elif facility_choice == 2:
+      # Add facility
+      facility_name = input("Enter Facility name: ")
+      print("Back to the previous Menu")
+    elif facility_choice == 3:
+      # Back to the main menu
+      print("Back to the Main Menu")
+ 
